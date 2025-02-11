@@ -1,0 +1,38 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.Master.cs" Inherits="PTT.Layout" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="layout.css"/>
+</head>
+<body>
+    <form id="layoutform" runat="server">
+         <div id="container"> 
+                <div class="header">
+                    <h1 id="header-title"><asp:Label ID="PageTitle" runat="server" Text="Dashboard"></asp:Label></h1>
+                </div>
+             <!--containers for the side navigation-->
+                <div class="side-nav">
+                  <div class="profile">
+                    <div class="profile-icon"><img src="Assets/utd.png"></div>
+                      <div class="icon-border"></div>
+                      <!--Container for the the user login message, allows us to change the name to greet each logged in user-->
+                    <div class="profile-user"><asp:Label ID="StudentName" runat="server" Text="Guest"></asp:Label></div>
+                  </div>
+                    <!--the links that will redirect us to the correct page-->
+                    <div class="links">
+                      <a href="peer_review.aspx" class="nav-link">Peer Review Form</a>
+                      <a href="performance_report.aspx" class="nav-link">Performance Report</a>
+                      <a href="logout.aspx" class="nav-link">Logout</a>
+                  </div>
+                </div>
+                <div class="content" id="content">
+                    <asp:ContentPlaceHolder ID="parentholder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+    </form>
+</body>
+</html>

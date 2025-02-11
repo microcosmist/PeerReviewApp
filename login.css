@@ -1,0 +1,64 @@
+﻿
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/*controls the layout of the page*/
+html {
+    display: grid;
+    min-height: 100%;
+}
+
+/*container for the login box*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/Assets/vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*controls the size and contents within the login box*/
+#StudentLogin table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*rounds the corners of the login box*/
+#StudentLogin {
+    border-radius: 50px;
+}
+
+/*controls the look of the text boxes for username and password*/
+#StudentLogin input[type="text"],
+#StudentLogin input[type="password"] {
+    margin: 10px auto;
+    width: 80%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #41618a;
+    font-size: 0.9em;
+}
+
+/*controls the look of the log in button*/
+#StudentLogin input[type="submit"],
+.loginbutton {
+    margin: 10px auto;
+    display: flex;
+    background-color: rgb(65, 88, 218);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    width: auto; 
+}
+
